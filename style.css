@@ -8,96 +8,114 @@ body {
     line-height: 1.6;
 }
 
-header {
+/* Header para escritorio */
+.desktop-header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav ul {
+.desktop-header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
+.desktop-header nav ul li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.desktop-header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
+/* Ajuste del contenido para no quedar bajo el header */
+.content {
+    padding-top: 80px; /* Ajuste dependiendo de la altura del header */
 }
 
-h2 {
-    margin-top: 0;
+/* Icono de menú para móviles */
+.mobile-menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1001;
+    cursor: pointer;
 }
 
-/* Estilo de la cuadrícula de proyectos */
+/* Barra lateral móvil */
+.mobile-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+}
+
+.mobile-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-sidebar ul li {
+    padding: 15px 20px;
+}
+
+.mobile-sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-sidebar .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+/* Cuadrícula de proyectos */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    padding: 20px;
 }
 
 .project-card {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: center;
-}
-
-.project-card h3 {
-    margin-top: 0;
-    color: #333;
-}
-
-.project-card p {
-    font-size: 1em;
-    color: #666;
-}
-
-.project-card .btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.project-card .btn:hover {
-    background-color: #555;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilo del pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 0;
-}
+    box-shadow
