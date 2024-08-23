@@ -1,45 +1,61 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #fff;
 }
 
 /* Estilo del contenedor principal */
 .container {
     width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
     overflow: hidden;
+    text-align: center;
 }
 
 /* Estilo del encabezado */
 .header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 400;
 }
 
 /* Contenedor del mapa */
 #map-container {
+    position: relative;
     width: 100%;
     height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+    background: #e0e0e0;
 }
 
 /* Estilo del iframe que contiene el mapa */
-#iframe {
+#map-frame {
     width: 100%;
     height: 100%;
     border: none;
@@ -47,8 +63,8 @@ body {
 
 /* Estilo del pie de página */
 .footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9em;
 }
