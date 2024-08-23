@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
+    <script defer src="script.js"></script> <!-- Enlace al archivo JS -->
 </head>
 <body>
-    <header>
+
+    <!-- Header para escritorio -->
+    <header class="desktop-header">
         <h1>Bienvenido a mi Portafolio</h1>
         <nav>
             <ul>
@@ -17,34 +20,52 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2>Acerca de mí</h2>
-        <p>Hola, soy Victor, un desarrollador apasionado por la tecnología y la programación. Este sitio muestra algunos de mis proyectos más destacados.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Proyecto Vlak</h3>
-                <p>Proyecto de desarrollo de un mapa de España con los destinos ofrecidos en el programa de Abonos Recurrentes con origen en las 6 estaciones más importantes.</p>
-                <a href="/Proyecto Renfe/index.html" class="btn">Ver Proyecto</a>
+
+    <!-- Botón de menú para dispositivos móviles -->
+    <div class="mobile-menu-icon">
+        <span>&#9776;</span>
+    </div>
+
+    <!-- Barra lateral para dispositivos móviles -->
+    <nav class="mobile-sidebar">
+        <div class="close-btn">&times;</div>
+        <ul>
+            <li><a href="#about">Acerca de mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <section id="about">
+            <h2>Acerca de mí</h2>
+            <p>Hola, soy Victor, un desarrollador apasionado por la tecnología y la programación. Este sitio muestra algunos de mis proyectos más destacados.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Proyecto Vlak</h3>
+                    <p>Proyecto de desarrollo de un mapa de España con los destinos ofrecidos en el programa de Abonos Recurrentes con origen en las 6 estaciones más importantes.</p>
+                    <a href="/Proyecto Renfe/index.html" class="btn">Ver Proyecto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del Proyecto 2.</p>
+                    <a href="test.html" class="btn">Ver Proyecto</a>
+                </div>
+                <!-- Añade más tarjetas de proyectos aquí -->
             </div>
-            <div class="project-card">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del Proyecto 2.</p>
-                <a href="test.html" class="btn">Ver Proyecto</a>
-            </div>
-            <!-- Añade más tarjetas de proyectos aquí -->
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></p>
-    </section>
-    
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de mi correo electrónico: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></p>
+        </section>
+    </div>
+
     <footer>
         <p>&copy; 2024 Victor. Todos los derechos reservados.</p>
     </footer>
