@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -220,7 +221,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
 .cal-leyenda{display:flex;gap:16px;flex-wrap:wrap;margin-left:auto;font-size:12.5px;color:var(--tinta-2)}
 .cal-leyenda span{display:inline-flex;align-items:center;gap:6px}
 .cal-leyenda i{width:11px;height:11px;border-radius:3px;display:inline-block}
-.p-dental{background:var(--azul)} .p-anual{background:var(--verde)} .p-riesgo{background:var(--ambar)} .p-donacion{background:var(--granate)}
+.p-dental{background:var(--azul)} .p-anual{background:var(--verde)} .p-riesgo{background:var(--ambar)} .p-donacion{background:var(--granate)} .p-especialista{background:#6a4bb8}
 .calendario{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
 .mes{background:var(--ficha);border:1px solid var(--linea);border-radius:12px;box-shadow:var(--sombra);padding:12px 14px;min-height:104px}
 .mes h4{margin:0 0 8px;font:12px/1 var(--mono);text-transform:uppercase;letter-spacing:.09em;color:var(--tinta-2)}
@@ -231,6 +232,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
 .ev-anual{background:var(--verde-claro);color:#12563c}
 .ev-riesgo{background:var(--ambar-claro);color:#7a4a00}
 .ev-donacion{background:var(--granate-claro);color:#7a1e2d}
+.ev-especialista{background:#ece7f7;color:#432c7a}
 .ev-real{box-shadow:inset 0 0 0 1px currentColor}
 
 @media(max-width:920px){
@@ -263,6 +265,8 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
       <a href="#funciona">Cómo funciona</a>
       <a href="#rutas">Cómo pido cita</a>
       <a href="#coberturas">Qué cubre</a>
+      <a href="#novedades">Novedades 2026</a>
+      <a href="#reembolso">Reembolso</a>
       <a href="#topes">Topes y contador</a>
       <a href="#dental">Dental</a>
       <a href="#sintomas">Qué hago si…</a>
@@ -292,6 +296,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
       <dt>Carencias</dt><dd>No se aplican en esta póliza de empresa</dd>
       <dt>Preexistencias</dt><dd>Contratada sin preexistencias</dd>
       <dt>Extras</dt><dd>Dental 21 · Blua · Programas de salud · Videoconsulta de urgencias y de especialistas · Envío de medicamentos · Accidentes de tráfico y laborales</dd>
+      <dt>Reembolso</dt><dd>Complemento de 150.000 € disponible aparte, no incluido por defecto</dd>
     </dl>
   </aside>
 </section>
@@ -379,6 +384,15 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
       <div class="pasos">Tú → médico → informe → Sanitas autoriza → servicio</div>
     </div>
   </div>
+
+  <div class="aviso">
+    <h3>Tu duda: psiquiatría y psicología van al revés de lo que parece</h3>
+    <p>No necesitas un informe de psicología para ir al psiquiatra. El psiquiatra es un especialista más del cuadro médico, así que puedes pedirle cita directamente, como pedirías dermatología.</p>
+    <p>Lo que sí lleva filtro es lo contrario: las sesiones de <b>psicología</b> solo entran en cobertura si te las prescribe un psiquiatra, tu médico de familia (Médico Asesor de Salud Familiar), un pediatra o un oncólogo. Sin esa prescripción, el psicólogo del cuadro no te lo factura a Sanitas.</p>
+    <div class="flujo">Medicina Familiar o Psiquiatría  →  prescripción escrita  →  Psicólogo del cuadro  →  hasta 15 sesiones/año</div>
+    <p>Dos matices que importan: los <b>test psicométricos los pagas tú</b>, y quedan fuera psicoanálisis, terapia psicoanalítica, hipnosis, terapias con animales y rehabilitación psicosocial o neuropsiquiátrica. Del lado de psiquiatría, el condicionado detalla la <b>hospitalización</b>: cubre ingreso con pernocta para brotes agudos, hasta 50 días por año.</p>
+    <p>Si solo quieres hablar con alguien sin pasar por consulta, tienes el programa de psicología a distancia de Blua (teléfono, chat o videoconsulta), que no gasta esas 15 sesiones. No cubre trastornos graves: psicosis, depresión grave, trastornos de la alimentación o de la personalidad, demencias.</p>
+  </div>
 </section>
 
 <section id="coberturas">
@@ -392,6 +406,69 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
     <button data-f="auth" aria-pressed="false">Con autorización</button>
   </div>
   <div class="fichas" id="fichas-coberturas"></div>
+</section>
+
+<section id="novedades">
+  <span class="eyebrow">Novedades 2026</span>
+  <h2>12 coberturas nuevas este año</h2>
+  <p class="lead">Sanitas amplía la póliza para 2026. Casi todas son técnicas hospitalarias u oncológicas muy específicas que solo entran si tu médico las indica: no cambian tu uso diario, pero conviene saber que están. Ojo: solo cuentas con ellas si figuran en la versión más actualizada de tu condicionado.</p>
+  <div class="fichas" id="fichas-novedades"></div>
+</section>
+
+<section id="reembolso">
+  <span class="eyebrow">Opcional que puedes contratar</span>
+  <h2>Complemento de Reembolso 150.000</h2>
+  <p class="lead">Es un añadido de pago que <b>no tienes por defecto</b>. Tu póliza es de cuadro médico: solo médicos concertados. Este complemento te deja además ir a cualquier médico de fuera —en España o en el extranjero— y que Sanitas te devuelva parte de la factura. Se contrata en la plataforma PCP de Nestlé, en enero, asumiendo tú la diferencia de prima.</p>
+
+  <div class="rutas" style="grid-template-columns:1fr 1fr">
+    <div class="ruta">
+      <span class="sello s-directo">Si vas por el cuadro</span>
+      <h3>Como hasta ahora</h3>
+      <p>Sigues usando los más de 40.000 profesionales del cuadro sin copago y sin que consuma el límite del reembolso. Nada cambia.</p>
+      <div class="pasos">Cuadro médico → 0 € → no gasta capital</div>
+    </div>
+    <div class="ruta">
+      <span class="sello s-receta">Si eliges médico de fuera</span>
+      <h3>Pagas y te devuelven</h3>
+      <p>Vas a cualquier médico, pagas la factura y pides el reembolso por la app. Te devuelven el 100% si el servicio está recomendado por Sanitas, o el 80% si es ajeno.</p>
+      <div class="pasos">Pagas tú → app Mi Sanitas → te reembolsan</div>
+    </div>
+  </div>
+
+  <div class="tabla-wrap" style="margin-top:20px">
+    <table>
+      <thead><tr><th style="width:52%">Concepto</th><th style="width:24%">Límite reembolso</th><th style="width:24%">Nota</th></tr></thead>
+      <tbody>
+        <tr><td><b>Capital total asegurado</b></td><td class="num">150.000 €</td><td style="color:var(--tinta-2);font-size:14px">por persona y año</td></tr>
+        <tr><td>Servicios recomendados por Sanitas</td><td class="num">100%</td><td style="color:var(--tinta-2);font-size:14px">del gasto</td></tr>
+        <tr><td>Servicios ajenos (España o extranjero)</td><td class="num">80%</td><td style="color:var(--tinta-2);font-size:14px">del gasto</td></tr>
+        <tr><td>Asistencia hospitalaria, límite del bloque</td><td class="num">115.550 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Habitación por día de hospitalización</td><td class="num">1.000 €</td><td style="color:var(--tinta-2);font-size:14px">día</td></tr>
+        <tr><td>UVI/UCI por día</td><td class="num">1.300 €</td><td style="color:var(--tinta-2);font-size:14px">día</td></tr>
+        <tr><td>Subsidio por día de hospitalización<br><span style="font-size:12px;color:var(--tinta-2)">si el ingreso no lo paga el asegurador; excluye la hospitalización psiquiátrica</span></td><td class="num">76 €/día<br>máx. 90 días</td><td style="color:var(--tinta-2);font-size:14px">al año</td></tr>
+        <tr><td>Parto</td><td class="num">5.000 €</td><td style="color:var(--tinta-2);font-size:14px">normal o cesárea</td></tr>
+        <tr><td>Honorarios médicos por intervención</td><td class="num">40.000 €</td><td style="color:var(--tinta-2);font-size:14px">según grupo quirúrgico</td></tr>
+        <tr><td>Honorarios en régimen de hospitalización</td><td class="num">67 €</td><td style="color:var(--tinta-2);font-size:14px">por consulta</td></tr>
+        <tr><td>Asistencia extrahospitalaria, límite del bloque</td><td class="num">27.000 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Consulta de primaria</td><td class="num">100 €</td><td style="color:var(--tinta-2);font-size:14px">por consulta</td></tr>
+        <tr><td>Consulta de especialista</td><td class="num">150 €</td><td style="color:var(--tinta-2);font-size:14px">por consulta</td></tr>
+        <tr><td>Psicología y psiquiatría</td><td class="num">1.500 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Rehabilitación y fisioterapia</td><td class="num">2.000 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Podología</td><td class="num">200 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Odontología (extracciones, curas, limpiezas)</td><td class="num">325 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Ambulancia terrestre</td><td class="num">1.200 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Prótesis y material implantable</td><td class="num">3.750 €</td><td style="color:var(--tinta-2);font-size:14px">reembolso parcial</td></tr>
+        <tr><td>Atención y servicio a domicilio</td><td class="num">1.505 €</td><td style="color:var(--tinta-2);font-size:14px">año</td></tr>
+        <tr><td>Urgencia médica en viaje</td><td class="num">12.000 €</td><td style="color:var(--tinta-2);font-size:14px">persona y año</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="notas">
+    <li>Para cobrar un reembolso tienes <b>90 días desde la fecha de la factura</b>. Se tramita por la app Mi Sanitas adjuntando factura desglosada, prescripción médica e informe. El pago llega en unos 10 días laborables.</li>
+    <li>La cifra de la portada del folleto pone «50.000» por errata; la tabla de capital confirma <b>150.000 €</b>.</li>
+    <li>El subsidio de hospitalización solo aplica si el ingreso <b>no</b> lo cubre el asegurador, y como mucho <b>90 días al año</b> a 76 €/día. La hospitalización psiquiátrica no genera este subsidio.</li>
+    <li>Merece la pena si te importa elegir un especialista concreto fuera del cuadro. Si te vale la red de Sanitas, no lo necesitas: pagarías prima extra sin usarla.</li>
+  </ul>
 </section>
 
 <section id="topes">
@@ -415,7 +492,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
 <section id="dental">
   <span class="eyebrow">Sanitas Dental 21</span>
   <h2>Lo que en el dentista no pagas, y lo que sí</h2>
-  <p class="lead">El dental funciona distinto al resto: no hay copagos, pero muchos tratamientos tienen precio concertado que abonas tú en la clínica. Estas tarifas son las de 2025 y se actualizan cada 1 de enero.</p>
+  <p class="lead">El dental funciona distinto al resto: no hay copagos, pero muchos tratamientos tienen precio concertado que abonas tú en la clínica. Estas tarifas son las de 2026 y valen hasta el 31 de diciembre de 2026.</p>
   <div class="fichas" style="margin-top:20px">
     <article class="ficha">
       <div class="cab"><h3>Incluido, sin pagar nada</h3><span class="sello s-directo">Directo</span></div>
@@ -433,14 +510,14 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
     <article class="ficha">
       <div class="cab"><h3>Con precio concertado</h3><span class="sello s-fuera">Lo pagas tú</span></div>
       <ul>
-        <li>Empaste 68,50 € · reconstrucción 79,90 €</li>
-        <li>Endodoncia 139,90 € a 244,50 € según raíces</li>
-        <li>Estudio de salud periodontal 21,90 € · curetaje por cuadrante 81,90 €</li>
-        <li>Corona sobre diente desde 391,50 € · implante 863,50 €</li>
+        <li>Empaste 69,50 € · reconstrucción 80,90 €</li>
+        <li>Endodoncia 161,50 € a 253,50 € según raíces</li>
+        <li>Estudio de salud periodontal 21,90 € · curetaje por cuadrante 86,90 €</li>
+        <li>Corona sobre diente desde 403,50 € · implante 898,50 €</li>
         <li>Férula de descarga tipo Michigan 338,90 €</li>
-        <li>Ortodoncia: brackets metálicos ambas arcadas 2.759,50 € · Invisalign desde 2.185,50 €</li>
+        <li>Ortodoncia: brackets metálicos ambas arcadas 2.989,50 € · Invisalign desde 2.289,50 €</li>
       </ul>
-      <p class="ojo">Son precios cerrados de la red concertada, bastante por debajo del mercado libre, pero salen de tu bolsillo.</p>
+      <p class="ojo">Son precios cerrados de la red concertada, bastante por debajo del mercado libre, pero salen de tu bolsillo. Subieron ligeramente respecto a 2025.</p>
     </article>
   </div>
 </section>
@@ -480,6 +557,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
     <span class="cal-leyenda">
       <span><i class="p-dental"></i> Dental</span>
       <span><i class="p-anual"></i> Revisión anual</span>
+      <span><i class="p-especialista"></i> Especialistas</span>
       <span><i class="p-riesgo"></i> Según riesgo</span>
       <span><i class="p-donacion"></i> Donación</span>
     </span>
@@ -491,7 +569,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
 <section id="checklist">
   <span class="eyebrow">Mi año</span>
   <h2>Qué te toca revisar, y cuándo</h2>
-  <p class="lead">Tienes 25 años y no hay síntomas de por medio, así que el plan sensato no es una visita anual a cada especialidad: es una revisión centrada en medicina familiar y derivar solo si hay algo. Lo demás está aquí como «según riesgo», para que sepas cuándo activarlo.</p>
+  <p class="lead">Aquí tienes tres niveles: la <b>revisión periódica</b> con beneficio demostrado (medicina familiar, tensión, dental, piel), las visitas <b>anuales a especialistas</b> que has pedido (oftalmología, neurología, urología, cardiología, dermatología y analítica), y lo que es <b>solo si hay motivo</b>. Cada especialista lleva una nota clínica honesta: a los 25 años y sin síntomas, muchas de esas anuales no aportan gran cosa, pero las tienes listadas y en el calendario para que decidas tú.</p>
 
   <div class="panel-progreso">
     <div><div class="cifra" id="cifra-progreso">0%</div><div style="font-size:13px;color:var(--tinta-2)">completado este año</div></div>
@@ -508,6 +586,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
   <div class="filtros" id="filtros-tareas" role="group" aria-label="Filtrar tareas">
     <button data-t="todo" aria-pressed="true">Todas</button>
     <button data-t="anual" aria-pressed="false">Revisión periódica</button>
+    <button data-t="especialista" aria-pressed="false">Especialistas</button>
     <button data-t="riesgo" aria-pressed="false">Solo si hay motivo</button>
     <button data-t="pendiente" aria-pressed="false">Pendientes</button>
   </div>
@@ -558,7 +637,7 @@ footer{border-top:1px solid var(--linea);margin-top:60px;padding-top:22px;font-s
   <details>
     <summary>De dónde sale cada dato</summary>
     <div class="cuerpo">
-      <p>Todo lo contractual procede de tu propia documentación: condiciones generales (coberturas, topes, exclusiones, forma de prestar los servicios), condiciones particulares (productos contratados, ausencia de copagos y carencias, tarifas dentales 2025) y el certificado de cobertura en España, que confirma la vigencia hasta el 31/12/2026 y que la modalidad es de asistencia sanitaria, no de reembolso.</p>
+      <p>Todo lo contractual procede de tu propia documentación: condiciones generales (coberturas, topes, exclusiones, forma de prestar los servicios), condiciones particulares (productos contratados, ausencia de copagos y carencias), el certificado de cobertura en España (vigencia hasta el 31/12/2026, modalidad de asistencia sanitaria y no de reembolso), las tarifas de Sanitas Dental 21 de 2026, el folleto de las 12 nuevas coberturas 2026 y la ficha del Complemento de Reembolso 150.000.</p>
       <p>Las recomendaciones preventivas siguen el enfoque del PAPPS de la semFYC: prevención desde atención primaria, no cribados indiscriminados en adultos jóvenes sanos. Los intervalos de donación de sangre proceden del Real Decreto 1088/2005 y de los criterios europeos que algunas comunidades ya aplican.</p>
       <p>Esta página es una guía de uso, no un documento contractual ni consejo médico. Ante cualquier discrepancia manda el condicionado de la póliza, y las decisiones clínicas las toma tu médico.</p>
     </div>
@@ -694,7 +773,7 @@ var COBERTURAS=[
    "Consulta, higiene, urgencia, radiología y extracciones sin coste",
    "El resto de tratamientos, a precio concertado"],
   ojo:"Detalle completo en la sección Dental.",
-  tope:"Tarifas 2025, revisables cada 1 de enero"},
+  tope:"Tarifas 2026, válidas hasta 31/12/2026"},
 
  {t:"Segunda opinión médica",v:"receta",p:[
    "Enfermedades graves o crónicas con mal pronóstico",
@@ -728,6 +807,36 @@ document.getElementById("filtros-coberturas").addEventListener("click",function(
   this.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",String(x===b));});
   pintarCoberturas(b.dataset.f);
 });
+
+/* ---------- novedades 2026 ---------- */
+var NOVEDADES=[
+ {t:"Crioablación cardiaca",area:"Corazón",d:"Alternativa a la radiofrecuencia para tratar arritmias. Antes estaba excluida; ahora entra."},
+ {t:"Guías de presión coronaria",area:"Corazón",d:"Prueba durante el cateterismo para decidir, en lesiones dudosas, si una arteria necesita tratamiento."},
+ {t:"Imagen intracoronaria (IVUS/OCT)",area:"Corazón",d:"Imagen desde dentro de la arteria para afinar el diagnóstico y evitar reintervenciones."},
+ {t:"Ablación rotacional y litotricia intravascular",area:"Corazón",d:"Retira la placa calcificada antes de colocar un stent, mejorando el resultado."},
+ {t:"Criterios diana PD-L1 actualizados",area:"Oncología",d:"Estudio de dianas del tumor para diseñar terapias dirigidas y personalizadas en cáncer."},
+ {t:"PET-TC Colina y PET-TC PSMA",area:"Oncología",d:"Prueba de diagnóstico para cáncer de próstata y adenoma de paratiroides."},
+ {t:"Láser percutáneo para litiasis renal",area:"Urología",d:"Alternativa para cálculos mayores de 2 cm, con más precisión y seguridad."},
+ {t:"Radiocirugía cerebral",area:"Neurología",d:"Tratamiento no invasivo de lesiones cerebrales, como alternativa a la cirugía abierta."},
+ {t:"Contraste en ecografía renal (menores de 18)",area:"Pediatría",d:"Contraste intravenoso para ver mejor el aparato urinario y detectar anomalías."},
+ {t:"Enzima DAO en análisis de sangre",area:"Diagnóstico",d:"Mide la actividad de la enzima DAO; ayuda en migraña, molestias digestivas, fatiga o dolores musculares."},
+ {t:"Logopedia infantil (menores de 14)",area:"Rehabilitación",d:"Rehabilitación del lenguaje para trastornos del habla en niños."},
+ {t:"Suelo pélvico tras cirugía de incontinencia",area:"Rehabilitación",d:"Rehabilitación complementaria para recuperar el suelo pélvico tras esa cirugía."}
+];
+
+function pintarNovedades(){
+  var cont=document.getElementById("fichas-novedades");
+  cont.innerHTML="";
+  NOVEDADES.forEach(function(n){
+    var el=document.createElement("article");
+    el.className="ficha";
+    el.innerHTML='<div class="cab"><h3>'+n.t+'</h3><span class="sello s-directo" style="background:var(--azul-claro);color:#0a4a78;border-color:#b8dcf3">Nuevo</span></div>'+
+      '<p style="margin:0;color:var(--tinta-2);font-size:14.5px">'+n.d+'</p>'+
+      '<p class="ojo">'+n.area+'</p>';
+    cont.appendChild(el);
+  });
+}
+pintarNovedades();
 
 /* ---------- topes ---------- */
 var TOPES=[
@@ -816,7 +925,20 @@ var TAREAS=[
  {id:"uro",c:"riesgo",t:"Urología",f:"la marca el especialista",v:"directo",
   d:"El propio contrato dice que la periodicidad de la prevención urológica la decide el especialista según el riesgo. A tu edad, motivo concreto o nada."},
  {id:"orl",c:"riesgo",t:"Otorrinolaringología",f:"según síntomas",v:"directo",
-  d:"Pérdida de audición, ruidos, obstrucción nasal persistente o afonía de más de tres semanas."}
+  d:"Pérdida de audición, ruidos, obstrucción nasal persistente o afonía de más de tres semanas."},
+
+ {id:"oftalmo",c:"especialista",t:"Oftalmología",f:"1 vez al año",v:"directo",
+  d:"Revisión de vista, tensión ocular y fondo de ojo. Acceso directo al cuadro. Nota clínica: sin gafas ni síntomas, a tu edad no hace falta anual; con gafas, cada 1-2 años es razonable. Las gafas y lentillas las pagas tú."},
+ {id:"neuro",c:"especialista",t:"Neurología",f:"1 vez al año",v:"directo",
+  d:"Acceso directo al cuadro. Nota clínica: no es una revisión de cribado habitual en adultos jóvenes sanos; tiene sentido si hay dolores de cabeza recurrentes, mareos, hormigueos o antecedentes familiares. Sin eso, la consulta puede no encontrar nada que revisar."},
+ {id:"urologia",c:"especialista",t:"Urología",f:"1 vez al año",v:"directo",
+  d:"Acceso directo al cuadro. Tu contrato deja la periodicidad al criterio del especialista según tu riesgo. El PSA de cribado se plantea a partir de los 45-50; antes, por síntomas o antecedentes familiares."},
+ {id:"cardio",c:"especialista",t:"Cardiología",f:"1 vez al año",v:"directo",
+  d:"Acceso directo al cuadro. Con ECG y, si procede, prueba de esfuerzo. Indicada de verdad si hay antecedentes familiares de cardiopatía precoz, tensión alta o vas a empezar deporte intenso."},
+ {id:"dermarev",c:"especialista",t:"Dermatología (revisión de lunares)",f:"1 vez al año",v:"directo",
+  d:"Revisión completa de lunares. Recomendable como anual sobre todo si tienes muchos lunares, piel muy clara o antecedentes familiares de melanoma. Si no, la autoexploración cada pocos meses suele bastar."},
+ {id:"analiticaanual",c:"especialista",t:"Analítica anual completa",f:"1 vez al año",v:"receta",
+  d:"Hemograma, perfil lipídico, glucosa, función renal y hepática. Necesita prescripción. Nota clínica: sin factores de riesgo, la analítica anual sistemática no tiene beneficio demostrado y da falsos positivos; muchos médicos la espacian más. La pongo porque la has pedido."}
 ];
 
 var VIA_TXT={directo:["s-directo","Directo"],receta:["s-receta","Con receta"],auth:["s-auth","Con autorización"],fuera:["s-fuera","Fuera de póliza"]};
@@ -1081,18 +1203,26 @@ document.getElementById("filtros-sintomas").addEventListener("click",function(e)
 var MESES=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
 // visitas sugeridas: mes por defecto (0-11) para repartir el año
 var SUGERIDAS=[
-  {tipo:"dental",mes:2,txt:"Revisión + higiene dental"},
-  {tipo:"dental",mes:8,txt:"Revisión + higiene dental"},
   {tipo:"anual",mes:0,txt:"Medicina Familiar + tensión"},
   {tipo:"anual",mes:0,txt:"Repaso de vacunas"},
-  {tipo:"anual",mes:5,txt:"Revisión de la vista"},
-  {tipo:"anual",mes:9,txt:"Chequeo de ánimo y estrés"},
+  {tipo:"dental",mes:2,txt:"Revisión + higiene dental"},
+  {tipo:"especialista",mes:1,txt:"Oftalmología"},
+  {tipo:"especialista",mes:2,txt:"Analítica anual"},
+  {tipo:"especialista",mes:3,txt:"Dermatología (lunares)"},
+  {tipo:"especialista",mes:4,txt:"Cardiología"},
   {tipo:"riesgo",mes:4,txt:"Piel: autoexploración (cada 2-3 meses)"},
+  {tipo:"especialista",mes:6,txt:"Neurología"},
+  {tipo:"especialista",mes:8,txt:"Urología"},
+  {tipo:"dental",mes:8,txt:"Revisión + higiene dental"},
+  {tipo:"anual",mes:9,txt:"Chequeo de ánimo y estrés"},
+  {tipo:"anual",mes:9,txt:"Revisión de la vista"},
   {tipo:"riesgo",mes:10,txt:"Piel: autoexploración (cada 2-3 meses)"}
 ];
 // mapa id de tarea -> tipo de evento para colorear cuando haya fecha real
 var TIPO_TAREA={};
-TAREAS.forEach(function(t){TIPO_TAREA[t.id]=(t.c==="anual"?"anual":"riesgo");});
+TAREAS.forEach(function(t){
+  TIPO_TAREA[t.id]= t.c==="anual" ? "anual" : (t.c==="especialista" ? "especialista" : "riesgo");
+});
 TIPO_TAREA.dental1="dental";
 
 var añoCal=new Date().getFullYear();
